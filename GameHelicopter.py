@@ -48,7 +48,7 @@ class Cell:
                 if 0 <= nx < COLS and 0 <= ny < ROWS:
                     neighbor = grid[ny][nx]
                     if neighbor.cell_type == "tree" and not neighbor.burning and random.random() < 0.01:
-                        neighbor.burning = True  # 2% шанс загореться 
+                        neighbor.burning = True  # 1% шанс загореться 
 
 class Helicopter:
     def __init__(self):
